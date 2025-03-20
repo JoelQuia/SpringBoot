@@ -26,9 +26,9 @@ public class AlunosRestServices {
     @GetMapping("/alunos")
     public List<Aluno> getAlunos() {
         List<Aluno> alunos = new ArrayList<>();
-        alunos.add(new Aluno("João15", 15));
-        alunos.add(new Aluno("João16", 16));
-        alunos.add(new Aluno("João17", 17));
+        alunos.add(new Aluno("Joel", 18));
+        alunos.add(new Aluno("Khia", 19));
+        alunos.add(new Aluno("Bagriel", 15));
         return alunos;
     }
 
