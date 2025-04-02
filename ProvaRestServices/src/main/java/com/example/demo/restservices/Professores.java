@@ -17,9 +17,11 @@ import jakarta.validation.Valid;
 @RestController
 public class Professores {
 
+    List<Professor> professores = new ArrayList<>();
+    
     @GetMapping("/professores/listar")
     public List<Professor> getProfessores() {
-        List<Professor> professores = new ArrayList<>();
+        
         professores.add(new Professor("Mauricio", 47, "238.182.593-10"));
         professores.add(new Professor("Clayton", 35, "849.829.174-28"));
         professores.add(new Professor("Ana Paula", 29, "495.383.282-93"));

@@ -17,9 +17,11 @@ import jakarta.validation.Valid;
 @RestController
 public class Alunos {
 
+    List<Aluno> alunos = new ArrayList<>();
+
     @GetMapping("/alunos/listar")
     public List<Aluno> getAlunos() {
-        List<Aluno> alunos = new ArrayList<>();
+
         alunos.add(new Aluno("Joel", 18, "494.929.268-93"));
         alunos.add(new Aluno("Khia", 19, "302.198.485-34"));
         alunos.add(new Aluno("Bagriel", 15, "645.232.874-12"));
